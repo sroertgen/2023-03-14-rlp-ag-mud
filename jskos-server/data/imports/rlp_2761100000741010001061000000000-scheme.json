@@ -1,0 +1,16 @@
+{
+   "@context" : "https://gbv.github.io/jskos/context.json",
+   "prefLabel" : {
+      "de" : "MedienkomP@ss - Rahmenkonzept ab 2018 Sek. I mit KMK Formulierungen"
+   },
+   "topConcepts" : [
+      {
+         "uri" : "http://rlp.de/bdc6b988-b97f-4c17-8512-ecf2fa2daebf13aac9fa-4feb-4b17-882a-b1bdb1caa66f"
+      }
+   ],
+   "type" : [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+   ],
+   "uri" : "http://rlp.de/2761100000741010001061000000000"
+}
+

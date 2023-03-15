@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  cocoda:
+    image: coliconc/cocoda
+    volumes:
+      # Mount ./config folder into container
+      - ./cocoda/config:/config
+    ports:
+      # Use host port 8080
+      - 8080:80
+    restart: always
+  jskos-server:
+    image: coliconc/jskos-server
+    # replace this with your UID/GID if necessary (id -u; id -g); remove on macOS/Windows
+    user: 1000:1000
+    depends_on:
+      - mongo
+    volumes:
+      - ./jskos-server/data/config:/config
+      - ./jskos-server/data/imports:/data/imports
+    # environment:
+    #   - NODE_ENV=production # note that this requires the server to be run behind a HTTPS proxy
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:4
+    # replace this with your UID/GID if necessary (id -u; id -g); remove on macOS/Windows
+    user: 1000:1000
+    volumes:
+      - ./jskos-server/data/db:/data/db
+    restart: unless-stopped

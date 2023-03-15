@@ -1,0 +1,16 @@
+{
+   "@context" : "https://gbv.github.io/jskos/context.json",
+   "prefLabel" : {
+      "de" : "MedienkomP@ss in leichter Sprache"
+   },
+   "topConcepts" : [
+      {
+         "uri" : "http://rlp.de/a91add61-c1ca-432f-8fe8-00323c5a56f413aac9fa-4feb-4b17-882a-b1bdb1caa66f"
+      }
+   ],
+   "type" : [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+   ],
+   "uri" : "http://rlp.de/2761100000740606001063000000000"
+}
+

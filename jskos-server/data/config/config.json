@@ -1,0 +1,6 @@
+{
+  "mongo": {
+    "host": "mongo"
+  },
+  "namespace": "4ba96f25-31e1-443d-8164-3574378a1439"
+}

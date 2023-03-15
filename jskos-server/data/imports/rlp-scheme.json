@@ -1,0 +1,11 @@
+{
+   "@context" : "https://gbv.github.io/jskos/context.json",
+   "prefLabel" : {
+      "de" : "Medienkompass Rheinland-Pfalz (2017)"
+   },
+   "type" : [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+   ],
+   "uri" : "http://rlp.de/50"
+}
+
